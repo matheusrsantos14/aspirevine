@@ -1,7 +1,81 @@
 
- @import "bootstrap";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 
 body {
-  padding-top: 55px;
 }
+
+.logo  {
+  height: 50px;
+}
+
+.nav-item{
+  justify-content: flex-end !important;
+}
+
+.nav {
+  justify-content: flex-end !important;
+}
+
+.justify-content-end{
+  align-items: flex-end !important;
+  justify-content: flex-end !important;
+}
+
+.navbar-toggler{
+  line-height: 50px;
+}
+// ---------------- Job Page jobs#index --------------------------//
+
+.job_list{
+  padding: 10px;
+  display: table;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  clear: both;
+  margin: 10px 0px;
+  //border: .5px solid black;
+}
+
+.company_logo {
+  height: 100%;
+  max-height: 150px;
+}
+
+.company_logo_container {
+  padding: 20px;
+  height: 150px;
+  float: left;
+  display: inline-block;
+  box-sizing: border-box;
+  max-height:150px;
+}
+
+.job_list_info{
+  display: inline-block;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//---------------------------space -------------//

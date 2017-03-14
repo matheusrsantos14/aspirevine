@@ -1,0 +1,18 @@
+
+<div class="container">
+
+  <h1>Jobs Page</h1>
+
+  <% @jobs.each do |job| %>
+      <div class="job_list">
+        <div class="company_logo_container"><%=image_tag("company_logo.png", :class => "company_logo")%></div>
+        <div class="job_list_info">
+          <h3><%=job.title%></h3>
+          <h5><%=job.company_name%></h5>
+          <h5><%=job.location%></h5>
+          <%= link_to "See More", job, class:"btn btn-primary btn-sm" %>
+        </div>
+      </div>
+  <%end%>
+
+</div>
