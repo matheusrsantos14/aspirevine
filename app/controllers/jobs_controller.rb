@@ -1,6 +1,15 @@
 class JobsController < ApplicationController
   before_action :set_job, only: [:show, :edit, :update, :destroy]
 
+  before_action do
+    if current_user != nil
+     authenticate_user!
+   else
+     authenticate_bootcamp!
+   end
+  end
+
+
   # GET /jobs
   # GET /jobs.json
   def index
@@ -61,6 +70,9 @@ class JobsController < ApplicationController
     end
   end
 
+  def authenticate_any!
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_job
@@ -69,6 +81,6 @@ class JobsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def job_params
-      params.require(:job).permit(:title, :company_name, :location, :company_info, :company_size, :industry)
+      params.require(:job).permit(:title, :company_name, :location, :company_info, :company_size, :industry, :job_info, :logo)
     end
 end

@@ -1,34 +1,27 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @job.title %>
-</p>
+<div class="container">
+  <div class="job_info">
+    <div class="company_logo_container"><%=image_tag @job.logo_url.to_s, :class => 'company_logo'%></div>
+    <div class="job_list_info">
+      <h3><%=@job.title%></h3>
+      <h5><%=@job.company_name%></h5>
+      <h5><%=@job.location%></h5>
+    </div>
 
-<p>
-  <strong>Company name:</strong>
-  <%= @job.company_name %>
-</p>
+    <div class="job_info">
+      <h3>About <%=@job.company_name%></h3>
+      <p><%=@job.company_info%></p>
+    </div>
 
-<p>
-  <strong>Location:</strong>
-  <%= @job.location %>
-</p>
+    <div class="job_info">
+      <h3>About Position</h3>
+      <p><%=@job.job_info%></p>
+    </div>
+  </div>
+  <%= link_to 'Apply', "#", class:"btn btn-success btn-lg"%>
+</div>
 
-<p>
-  <strong>Company info:</strong>
-  <%= @job.company_info %>
-</p>
-
-<p>
-  <strong>Company size:</strong>
-  <%= @job.company_size %>
-</p>
-
-<p>
-  <strong>Industry:</strong>
-  <%= @job.industry %>
-</p>
 
 <%= link_to 'Edit', edit_job_path(@job) %> |
 <%= link_to 'Back', jobs_path %>

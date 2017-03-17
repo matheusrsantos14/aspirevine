@@ -27,10 +27,9 @@ body {
 .navbar-toggler{
   line-height: 50px;
 }
-// ---------------- Job Page jobs#index --------------------------//
+// ---------------- Jobs List jobs#index --------------------------//
 
 .job_list{
-  padding: 10px;
   display: table;
   box-sizing: border-box;
   width: 100%;
@@ -47,6 +46,7 @@ body {
 
 .company_logo_container {
   padding: 20px;
+  padding-left: 0;
   height: 150px;
   float: left;
   display: inline-block;
@@ -59,7 +59,12 @@ body {
   padding: 10px;
 }
 
+//-------------------- Job Page jobs#show ---------//
 
+.job_info {
+  display: block;
+  float: left;
+}
 
 
 

@@ -1,11 +1,12 @@
 
 <div class="container">
 
+  <p id="notice"><%= notice %></p>
   <h1>Jobs Page</h1>
 
   <% @jobs.each do |job| %>
       <div class="job_list">
-        <div class="company_logo_container"><%=image_tag("company_logo.png", :class => "company_logo")%></div>
+        <div class="company_logo_container"><%=image_tag job.logo_url.to_s, :class => 'company_logo'%></div>
         <div class="job_list_info">
           <h3><%=job.title%></h3>
           <h5><%=job.company_name%></h5>

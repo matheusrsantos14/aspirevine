@@ -61,3 +61,5 @@ gem 'devise'
 gem 'font-awesome-sass'
 
 gem 'rails-assets-tether'
+
+gem 'carrierwave', '~> 1.0'
