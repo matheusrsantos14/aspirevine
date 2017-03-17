@@ -10,6 +10,7 @@
     <%= f.input :company_size %>
     <%= f.input :industry %>
     <%= f.file_field :logo %>
+    <%= f.hidden_field :employer_id, :value=>current_employer.id %>
   </div>
 
   <div class="form-actions">

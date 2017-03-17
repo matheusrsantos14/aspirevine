@@ -9,16 +9,21 @@
   <div class="navbar-collapse collapse justify-content-end">
     <ul class="navbar-nav">
       <% if current_user %>
-      <li class="nav-item"><%= link_to "Jobs", jobs_path, class:"nav-link" %></li>
-      <li class="nav-item"><%= link_to "Suggest", suggestions_path, class:"nav-link" %></li>
-      <li class="nav-item"><%= link_to "Profile", profile_path, class:"nav-link" %></li>
-      <li class="nav-item"><%= link_to "Log out", user_logout_path, class:"nav-link" %></li>
+        <li class="nav-item"><%= link_to "Jobs", jobs_path, class:"nav-link" %></li>
+        <li class="nav-item"><%= link_to "Suggest", suggestions_path, class:"nav-link" %></li>
+        <li class="nav-item"><%= link_to "My Profile", current_user, class:"nav-link" %></li>
+        <li class="nav-item"><%= link_to "Log out", user_logout_path, class:"nav-link" %></li>
       <% elsif current_bootcamp %>
-      <li class="nav-item"><%= link_to "Profile", '#', class:"nav-link" %></li>
-      <li class="nav-item"><%= link_to "Jobs", jobs_path, class:"nav-link" %></li>
-      <li class="nav-item"><%= link_to "Log out", bootcamp_logout_path, class:"nav-link" %></li>
+        <li class="nav-item"><%= link_to "My Profile", current_bootcamp, class:"nav-link" %></li>
+        <li class="nav-item"><%= link_to "Jobs", jobs_path, class:"nav-link" %></li>
+        <li class="nav-item"><%= link_to "Log out", bootcamp_logout_path, class:"nav-link" %></li>
+      <% elsif current_employer %>
+        <li class="nav-item"><%= link_to "My Profile", current_employer, class:"nav-link" %></li>
+        <li class="nav-item"><%= link_to "Jobs", jobs_path, class:"nav-link" %></li>
+        <li class="nav-item"><%= link_to "Add New Job", post_job_path, class:"nav-link" %></li>
+        <li class="nav-item"><%= link_to "Log out", bootcamp_logout_path, class:"nav-link" %></li>
       <% else %>
-      <li class="nav-item"><%= link_to "Log in", user_login_path, class:"nav-link" %></li>
+        <li class="nav-item"><%= link_to "Log in", user_login_path, class:"nav-link" %></li>
       <% end %>
     </ul>
   </div>
