@@ -1,10 +1,56 @@
 <div class="jumbotron">
   <div class="container">
-    <h1 class="display-3">Hello, world!</h1>
-    <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+    <h1 class="display-3">Candidates you can trust.</h1>
+    <p>An exclusive place to hire talented and trained entry-level employees in the tech and startup community.</p>
     <p><%= link_to "See Jobs", jobs_path, class:"btn btn-primary btn-lg"%></p>
-    <p><%= link_to "Sign In Bootcamp", 'bootcamps/sign_in', class:"btn btn-primary btn-lg"%></p>
-    <p><%= link_to "Sign In Company", 'employers/sign_in', class:"btn btn-primary btn-lg"%></p>
-    <p><%= link_to "Sign Out Bootcamp", bootcamp_logout_path, class:"btn btn-primary btn-lg"%></p>
   </div>
+</div>
+
+<div class="container">
+  <div class="marketing row">
+    <div class="col-md-4 marketing_inner">
+      <%= image_tag('trophy.png', :class => 'marketing_images') %>
+      <h2>Talent</h2>
+      <p>We partner with bootcamps and coding schools all over the country to get the brightest and boldest graduates currently seeking jobs in the tech sector. Each graduate has gone through intense training and in depth learning.</p>
+      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+    </div>
+    <div class="col-md-4 marketing_inner">
+      <%= image_tag('globe.png', :class => 'marketing_images') %>
+      <h2>Network</h2>
+      <p>With a huge network of highly qualified graduates we're positive hiring with Major is an investment. By being part of Major, your company will have exclusive access to network of marketers, developers, designers, account managers, and more!</p>
+      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+   </div>
+    <div class="col-md-4 marketing_inner">
+      <%= image_tag('graph.png', :class => 'marketing_images') %>
+      <h2>Growth</h2>
+      <p>Grow your team for success. Every company CEO knows their company is only as great as their team. The wrong team members can be detrimental to your company's success and waste of valuable capital. Use Major to hire the best team members.</p>
+      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+    </div>
+  </div>
+
+
+<hr class="container">
+
+<div class="cta_outer">
+  <div class="container cta_inner">
+    <h1>Get started today</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+       ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+       ullamco laboris </p>
+    <%= link_to "See Jobs", jobs_path, class:"btn btn-success btn-lg"%>
+  </div>
+</div>
+
+<hr>
+
+<footer>
+  <ul>
+    <li>&copy; 2017 Major, Inc.</li>
+    <li><%=link_to 'About', root_path%></li>
+    <li><%=link_to 'Sign up', root_path%></li>
+    <li><%=link_to 'FAQ', root_path%></li>
+    <li><%=link_to 'Bootcamps', root_path%></li>
+  </ul>
+</footer>
+
 </div>

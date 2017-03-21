@@ -7,8 +7,23 @@
 body {
 }
 
+.jumbotron{
+  color: white;
+  text-align: center;
+}
+
+.container{
+}
+
+.jumbotron{
+  background-image: url('banner.jpg');
+  background-size: cover;
+
+}
+
 .logo  {
   height: 50px;
+  padding:5px;
 }
 
 .nav-item{
@@ -27,6 +42,55 @@ body {
 .navbar-toggler{
   line-height: 50px;
 }
+
+// ---------------- Home Page pages#home --------------------------//
+
+.marketing {
+  padding: 0 0px 20px 0;
+}
+
+.marketing_inner{
+  text-align: center;
+}
+
+.marketing_images{
+  width: 100px;
+  padding: 20px 0px;
+}
+
+.cta_outer{
+  padding:50px;
+  width: 100%;
+  text-align: center;
+}
+
+.cta_inner h1{
+  margin-bottom: 50px;
+}
+
+.cta_inner p{
+  margin-bottom: 50px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  display: inline;
+  border-left: solid #dadada 1px;
+  padding-right: 10px;
+  padding-left: 15px;
+}
+
+footer ul li:nth-child(1){
+  padding-left: 0;
+  border-left: none;
+}
+
+
+
+
 // ---------------- Jobs List jobs#index --------------------------//
 
 .job_list{
@@ -64,11 +128,22 @@ body {
 .job_info {
   display: block;
   float: left;
+  width: 100%;
+}
+
+.btn-applying{
+  margin: 30px 0;
+}
+
+.link-move {
+  display: block;
+  width: 100%;
+  padding-bottom: 30px;
 }
 
 
 
-
+//-------------------- Page jobs#show ---------//
 
 
 

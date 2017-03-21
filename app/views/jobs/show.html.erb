@@ -19,9 +19,14 @@
       <p><%=@job.job_info%></p>
     </div>
   </div>
-  <%= link_to 'Apply', "#", class:"btn btn-success btn-lg"%>
+  <%= link_to 'Apply', "#", class:"btn btn-success btn-lg btn-applying"%>
+
+
+<% if current_employer %>
+  <%= link_to 'Edit', edit_job_path(@job), :class => 'link-move'  %>
+  <%= link_to 'Back', jobs_path, :class => 'link-move'%>
+<% else %>
+  <%= link_to 'Back', jobs_path, :class => 'link-move' %>
+<% end %>
+
 </div>
-
-
-<%= link_to 'Edit', edit_job_path(@job) %> |
-<%= link_to 'Back', jobs_path %>

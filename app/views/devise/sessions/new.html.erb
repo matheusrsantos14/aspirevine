@@ -1,3 +1,6 @@
+<div class="container">
+
+</br>
 <h2>Log in</h2>
 
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -12,4 +15,13 @@
   </div>
 <% end %>
 
+</br>
+
+<%= link_to "I'm a bootcamp", '/bootcamps/sign_in', class: 'btn btn-sm btn-primary' %>
+<%= link_to "I'm a Company", '/employers/sign_in', class: 'btn btn-sm btn-primary' %>
+
+</br>
+</br>
 <%= render "devise/shared/links" %>
+
+</div>
