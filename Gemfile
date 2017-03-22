@@ -63,5 +63,3 @@ gem 'font-awesome-sass'
 gem 'rails-assets-tether'
 
 gem 'carrierwave', '~> 1.0'
-
-gem 'rails_12factor', group: :production
